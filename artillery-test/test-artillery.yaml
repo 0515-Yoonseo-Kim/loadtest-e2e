@@ -1,0 +1,17 @@
+config:
+  processor: "./test-run.js"
+  target: "https://qnq0615.com"
+  phases:
+    - duration: 200
+      arrivalRate: 1
+      name: "접속 유지 시나리오"
+
+scenarios:
+  - name: "채팅방 시나리오"
+    weight: 1
+    flow:
+      - function: testUserFlow
+  - name: "접속 유지 시나리오"
+    weight: 9
+    flow:
+      - function: testStayOnlyFlow

@@ -1,0 +1,7 @@
+/node_modules/*
+.env
+/tests/*
+/artillery-test/artillery-results/*
+/artillery-test/*.out
+package-lock.json
+package.json
